@@ -23,8 +23,8 @@ module.exports = function(grunt) {
 					banner: '<%= tag.banner %>',
 				},
 				files: {
-					'<%= project.css %>/custom.css': '<%= project.scss %>/custom/main.scss',
-					'<%= project.css %>/bootstrap.css': '<%= project.scss %>/bootstrap/bootstrap.scss'
+					'<%= project.css %>/custom.css': '<%= project.scss %>/custom/main.scss'
+					
 				}
 			},
 			dist: {
@@ -32,8 +32,8 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'<%= project.css %>/custom.css': '<%= project.scss %>/custom/main.scss',
-					'<%= project.css %>/bootstrap.css': '<%= project.scss %>/bootstrap/bootstrap.scss'
+					'<%= project.css %>/custom.css': '<%= project.scss %>/custom/main.scss'
+					
 				}
 			}
 		},
