@@ -1,7 +1,7 @@
   
-  function lineChart()
+  exports.lineChart = function()
   {
-		$("#lineChart").empty();
+		$("#fourthPanelText").empty();
 	  //Width and height
 	 
 		var w= $(window).width()* 0.567 * 0.9;
@@ -50,7 +50,7 @@
 
 
 		// Create SVG element
-		var svg = d3.select("#lineChart")
+		var svg = d3.select("#fourthPanelText")
 						.append("svg")
 						.attr("width", w)
 						.attr("height", h);

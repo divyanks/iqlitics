@@ -1,6 +1,6 @@
-function createDonut()	
+exports.createDonut = function()	
 {
-	$("#donutChart").empty();
+	$("#firstPanelText").empty();
 	$("#donutLegend").empty();
 	/* Formatting function for row details - modify as you need */
 		var dataset = {
@@ -26,7 +26,7 @@ function createDonut()
 					.innerRadius((radius - 50)/2)
 					.outerRadius(radius - 50);
 
-		var svg = d3.select("#donutChart")
+		var svg = d3.select("#firstPanelText")
 					.style("right", width/3 + "px")
 					.append("svg")
 					.attr("width", width)
@@ -91,7 +91,7 @@ function createDonut()
 	});
 */					
 						
-}			
+}		
  				
 						
 						

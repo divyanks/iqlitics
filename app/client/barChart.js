@@ -1,4 +1,4 @@
- function createBarChart(id, data, config)
+ exports.createBarChart = function (id, data, config)
   {
 		$("#" + id).empty();
 		
