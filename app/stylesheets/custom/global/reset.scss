@@ -1,0 +1,303 @@
+html {
+	/* Footer is absolute positioned so these are required
+	to ensure that the footer is placed in the right spot. */
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	/* Basic font styling for the site */
+	font-family: $body-font;
+	font-weight: 300;
+	color: $black;
+}
+
+.blue-background {
+	background-color: $light-blue;
+}
+
+
+/**
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+blockquote,
+th,
+td {
+	margin:0;
+	padding:0;
+}
+
+ul {
+	> li {
+		list-style-type: none;
+	}
+}
+
+ol {
+	> li {
+		list-style-type: decimal;
+	}
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none; 
+	margin: 0; 
+}
+
+a {
+	text-decoration: none;
+	outline:none !important;
+	-webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  transition: font 0.1s steps(2);
+
+  &:visited, &:link, &:active {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+	&:focus {
+		color: inherit;
+	}
+
+	&.scroll-anchor {
+		//http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header/13184714#13184714
+		display: block;
+		position: relative;
+		top: -($nav-height + $sub-nav-height);
+		visibility: hidden;
+	}
+
+	&[ng-click] {
+		cursor: pointer;
+	}
+}
+
+.clearfix {
+	clear: both;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+
+
+// missing icons! :S
+.glyphicon-cd:before {
+	content: "\e201";
+}
+.glyphicon-save-file:before {
+	content: "\e202";
+}
+.glyphicon-open-file:before {
+	content: "\e203";
+}
+.glyphicon-level-up:before {
+	content: "\e204";
+}
+.glyphicon-copy:before {
+	content: "\e205";
+}
+.glyphicon-paste:before {
+	content: "\e206";
+}
+.glyphicon-alert:before {
+	content: "\e209";
+}
+.glyphicon-equalizer:before {
+	content: "\e210";
+}
+.glyphicon-king:before {
+	content: "\e211";
+}
+.glyphicon-queen:before {
+	content: "\e212";
+}
+.glyphicon-pawn:before {
+	content: "\e213";
+}
+.glyphicon-bishop:before {
+	content: "\e214";
+}
+.glyphicon-knight:before {
+	content: "\e215";
+}
+.glyphicon-baby-formula:before {
+	content: "\e216";
+}
+.glyphicon-tent:before {
+	content: "\26fa";
+}
+.glyphicon-blackboard:before {
+	content: "\e218";
+}
+.glyphicon-bed:before {
+	content: "\e219";
+}
+.glyphicon-apple:before {
+	content: "\f8ff";
+}
+.glyphicon-erase:before {
+	content: "\e221";
+}
+.glyphicon-hourglass:before {
+	content: "\231b";
+}
+.glyphicon-lamp:before {
+	content: "\e223";
+}
+.glyphicon-duplicate:before {
+	content: "\e224";
+}
+.glyphicon-piggy-bank:before {
+	content: "\e225";
+}
+.glyphicon-scissors:before {
+	content: "\e226";
+}
+.glyphicon-bitcoin:before {
+	content: "\e227";
+}
+.glyphicon-btc:before {
+	content: "\e227";
+}
+.glyphicon-xbt:before {
+	content: "\e227";
+}
+.glyphicon-yen:before {
+	content: "\00a5";
+}
+.glyphicon-jpy:before {
+	content: "\00a5";
+}
+.glyphicon-ruble:before {
+	content: "\20bd";
+}
+.glyphicon-rub:before {
+	content: "\20bd";
+}
+.glyphicon-scale:before {
+	content: "\e230";
+}
+.glyphicon-ice-lolly:before {
+	content: "\e231";
+}
+.glyphicon-ice-lolly-tasted:before {
+	content: "\e232";
+}
+.glyphicon-education:before {
+	content: "\e233";
+}
+.glyphicon-option-horizontal:before {
+	content: "\e234";
+}
+.glyphicon-option-vertical:before {
+	content: "\e235";
+}
+.glyphicon-menu-hamburger:before {
+	content: "\e236";
+}
+.glyphicon-modal-window:before {
+	content: "\e237";
+}
+.glyphicon-oil:before {
+	content: "\e238";
+}
+.glyphicon-grain:before {
+	content: "\e239";
+}
+.glyphicon-sunglasses:before {
+	content: "\e240";
+}
+.glyphicon-text-size:before {
+	content: "\e241";
+}
+.glyphicon-text-color:before {
+	content: "\e242";
+}
+.glyphicon-text-background:before {
+	content: "\e243";
+}
+.glyphicon-object-align-top:before {
+	content: "\e244";
+}
+.glyphicon-object-align-bottom:before {
+	content: "\e245";
+}
+.glyphicon-object-align-horizontal:before {
+	content: "\e246";
+}
+.glyphicon-object-align-left:before {
+	content: "\e247";
+}
+.glyphicon-object-align-vertical:before {
+	content: "\e248";
+}
+.glyphicon-object-align-right:before {
+	content: "\e249";
+}
+.glyphicon-triangle-right:before {
+	content: "\e250";
+}
+.glyphicon-triangle-left:before {
+	content: "\e251";
+}
+.glyphicon-triangle-bottom:before {
+	content: "\e252";
+}
+.glyphicon-triangle-top:before {
+	content: "\e253";
+}
+.glyphicon-console:before {
+	content: "\e254";
+}
+.glyphicon-superscript:before {
+	content: "\e255";
+}
+.glyphicon-subscript:before {
+	content: "\e256";
+}
+.glyphicon-menu-left:before {
+	content: "\e257";
+}
+.glyphicon-menu-right:before {
+	content: "\e258";
+}
+.glyphicon-menu-down:before {
+	content: "\e259";
+}
+.glyphicon-menu-up:before {
+	content: "\e260";
+}

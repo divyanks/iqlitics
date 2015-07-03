@@ -1,0 +1,38 @@
+@import 'variables';
+
+@mixin respond-to($media, $min: 0px) {
+	@if $media == small {
+		@media screen and (max-width: $screen-sm) {@content;}
+	}
+	@else if $media == medium {
+		@media screen and (min-width: $screen-sm + 1) and (max-width: $screen-md - 1) {@content;}
+	}
+	@else if $media == large {
+		@media screen and (min-width: $screen-md) {@content;}
+	} 
+	@else if $min == 0px {
+		@media screen and (max-width: $media) {@content;}
+	}
+	@else if $media == 0px {
+		@media screen and (min-width: $min) {@content;}
+	}
+	@else {
+		@media screen and (min-width: $min) and (max-width: $media) {@content;}
+	}
+}
+
+@mixin resize-input($lg-font, $md-font, $sm-font, $num-chars) {
+	width: $lg-font * $num-chars;
+	
+	@include respond-to(large) {
+		width: $lg-font * $num-chars;
+	}
+	
+	@include respond-to(medium) {
+		width: $md-font * $num-chars;
+	}
+	
+	@include respond-to(small) {
+		width: $sm-font * $num-chars;
+	}
+}

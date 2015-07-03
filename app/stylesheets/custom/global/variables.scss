@@ -1,0 +1,56 @@
+$screen-lg:			1140px;
+$screen-md:			900px;
+$screen-sm:			480px;
+
+$bootstrap-md:	992px;
+$bootstrap-sm:	768px;
+$bootstrap-xs:	480px;
+
+//Colors
+$orange:				#ff9000;
+$light-orange:	lighten($orange, 25%);
+
+$dark-black:		#383838;
+$black: 				#4d4d4d;
+$grey:					#808080;
+$light-grey:		#e6e6e6;
+$white:					#ffffff;
+
+$darker-blue: 	#1D579B;
+$dark-blue:			#2854a1;
+$blue:					#3661cf;
+$light-blue:		#4a79af;
+
+$green:					#66BB22;
+$dark-green:		darken($green, 10%);
+$darker-green:	#3c763d;
+$red:						#a94442;
+
+
+$success-green:	$darker-green;
+$error-red:			$red;
+
+// Definitions:
+$main-background: $light-blue;
+
+//Font
+ //$main-font: 'Open Sans', sans-serif;
+$header-font: 'Lato', sans-serif;
+$body-font: 'Lato', sans-serif;
+$h1-size: 32px;
+$h2-size: 29px;
+$h3-size: 23px;
+$h4-size: 20px;
+$h5-size: 17px;
+$h6-size: 14px;
+ 
+//Navbar
+$nav-height:			79px;
+$sub-nav-height:	50px;
+
+//Main Layout
+$main-wrapper-background-color: #F0F0F0;
+$main-border: 1px solid #d0d0d0;
+
+//Recommend
+$recommend-slide-color: #666666;
