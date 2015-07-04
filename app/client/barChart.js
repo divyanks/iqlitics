@@ -1,4 +1,9 @@
- exports.createBarChart = function (id, data, config)
+ angular.module('BarModule',[])
+ 		.service("barService", BarService);
+
+function BarService(){
+
+this.createBarChart = function (id, data, config)
   {
 		$("#" + id).empty();
 		
@@ -60,3 +65,4 @@
 		  return d;
 		}
 	}
+}

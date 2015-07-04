@@ -1,5 +1,8 @@
-  
-  exports.lineChart = function()
+   angular.module('LineModule',[])
+ 		.service("lineService", LineService);
+
+function LineService(){
+  this.lineChart = function()
   {
 		$("#fourthPanelText").empty();
 	  //Width and height
@@ -119,4 +122,5 @@
 		.attr("class", "axis")
 		.attr("transform", "translate(" + padding + ",0)")
 		.call(yAxis);
+}
 }
