@@ -1,0 +1,66 @@
+	.sidebar-collapse .nav > li > a 
+	{
+			font-size:larger;
+	}
+
+		.sidebar-collapse .nav > li > ul > li > a
+		{
+			font-size:larger;
+		}
+		.axis path,
+			.axis line {
+				fill: none;
+				stroke: #6C91DA;
+				stroke-width:2px
+				
+			}
+			
+			.axis text {
+				font-family: sans-serif;
+				font-size: 11px;
+			}
+
+			.y1 {
+				fill: white;
+				stroke: orange;
+				stroke-width: 1.5px;
+			}
+
+			.y2 {
+				fill: white;
+				stroke: red;
+				stroke-width: 1.5px;
+			}
+
+			.y3 {
+				fill: white;
+				stroke: steelblue;
+				stroke-width: 1.5px;
+			}
+
+			.line {
+			  fill: none;
+			  stroke-width: 4px;
+			}
+			.circle {
+				fill:white;
+				stroke:#9eafd0;
+				stroke-width:2px;
+			}
+		.tick line {
+		 opacity:0.2;
+		}
+		 .bar {
+			fill:steelblue;
+		  }
+		  	  .gridbar {
+			fill:steelblue;
+			opacity:.1;
+			stroke:steelblue;
+			
+		  }
+		 .hideBar {
+			fill:steelblue;
+			opacity:0;
+			stroke:none;
+		  }
