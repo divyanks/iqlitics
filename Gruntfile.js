@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+	module.exports = function(grunt) {
 	
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
@@ -48,7 +48,9 @@ module.exports = function(grunt) {
 					'<%= project.assets %>/js/main.min.js': '<%= project.client %>/main.js',
 					'<%= project.assets %>/js/donut.min.js': '<%= project.client %>/donut.js',
 					'<%= project.assets %>/js/lineChart.min.js': '<%= project.client %>/lineChart.js',
-					'<%= project.assets %>/js/barChart.min.js': '<%= project.client %>/barChart.js'
+					'<%= project.assets %>/js/barChart.min.js': '<%= project.client %>/barChart.js',
+					'<%= project.assets %>/js/provider.min.js': '<%= project.client %>/provider.js',
+					'<%= project.assets %>/js/dataService.min.js': '<%= project.client %>/dataService.js'
 				}
 			}
 		},
@@ -60,7 +62,9 @@ module.exports = function(grunt) {
 					'<%= project.assets %>/js/main.min.js': '<%= project.client %>/main.js',
 					'<%= project.assets %>/js/donut.min.js': '<%= project.client %>/donut.js',
 					'<%= project.assets %>/js/lineChart.min.js': '<%= project.client %>/lineChart.js',
-					'<%= project.assets %>/js/barChart.min.js': '<%= project.client %>/barChart.js'					
+					'<%= project.assets %>/js/barChart.min.js': '<%= project.client %>/barChart.js',					
+					'<%= project.assets %>/js/provider.min.js': '<%= project.client %>/provider.js',					
+					'<%= project.assets %>/js/dataService.min.js': '<%= project.client %>/dataService.js'					
 				}
 			},
 			dist: {
@@ -70,7 +74,9 @@ module.exports = function(grunt) {
 					'<%= project.assets %>/js/main.min.js': '<%= project.client %>/main.js',
 					'<%= project.assets %>/js/donut.min.js': '<%= project.client %>/donut.js',
 					'<%= project.assets %>/js/lineChart.min.js': '<%= project.client %>/lineChart.js',
-					'<%= project.assets %>/js/barChart.min.js': '<%= project.client %>/barChart.js'					
+					'<%= project.assets %>/js/barChart.min.js': '<%= project.client %>/barChart.js',					
+					'<%= project.assets %>/js/provider.min.js': '<%= project.client %>/provider.js',					
+					'<%= project.assets %>/js/dataService.min.js': '<%= project.client %>/dataService.js'					
 				}
 			}
 		},
