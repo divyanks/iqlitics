@@ -1,23 +1,43 @@
- angular.module('DonutModule',[])
- 		.service("serviceDonut", CreateDonut);
-
+var dont =  angular.module('DonutModule',[]);
+ dont.provider('donutProvider', function(){ 
+      this.$get = function getDonut(){
+	  return new CreateDonut();	  
+	  }; 
+ }); 		
 function CreateDonut(){
+	/*
+	 * COnfigures the styling of the donut, x: y: co-ordinates in the screen
+	 * selects the data source/data service
+	 */
 	this.configDonut = function () {
 
 	
 	};
+	/*
+	 * This function presents the data as required by the donut Module
+	 *
+	 */
 	this.dataDonut = function () {
+		/*
+		 * Get the data from master or data service
+		 */
+		var data = require("./dataService.js");
+
+		var tmp = data.DataService();
 		
+		
+		return tmp;
 	};
+	
 	this.createDonut = function()	
 	{
 		$("#firstPanelText").empty();
 		$("#donutLegend").empty();
-		/* Formatting function for row details - modify as you need */
-			var dataset = {
-			  dataArray: [53245, 28479, 19697, 24037, 40245, 23424],
-			};
 
+		/* Formatting function for row details - modify as you need */
+			var dataset = this.dataDonut();
+			
+		
 			var width = $(window).width()* 0.567 * 0.5;
 			var height = $(window).height() * 0.35;
 	
@@ -46,7 +66,7 @@ function CreateDonut(){
 						.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 			var path = svg.selectAll("path")
-							.data(pie(dataset.dataArray))
+							.data(pie(dataset))
 						  .enter().append("path")
 							.attr("fill", function(d, i) { return color(i); })
 							.attr("d", arc);
@@ -60,7 +80,7 @@ function CreateDonut(){
 		//	var str = '<div style="position:relative;bottom:' + bottom + 'px;left:' +  left + 'px "><table style="border-collapse: separate; border-spacing: 0 2em;">';
 			var str = '<div style="position:relative;padding-left:8em"><table style="border-collapse: separate; border-spacing: 2em 2em;">';
 			var names = ['A', 'B', 'C', 'D', 'E', 'F'];
-			dataset.dataArray.forEach(function (d, i) {
+			dataset.forEach(function (d, i) {
 				str += '<tr ><td style="width:' + rectWidth + 'px; height:' + rectWidth + 'px;background-color:' + color(i)+ ';"></td><td>' + names[i] + '</td></tr> ';
 
 

@@ -1,7 +1,11 @@
  angular.module('BarModule',[])
- 		.service("barService", BarService);
+    .provider('barProvider', function(){
+        this.$get = function getBar(){
+		     return new CreateBar();
+		}; 
+ }); 		
 
-function BarService(){
+function CreateBar(){
 
 this.createBarChart = function (id, data, config)
   {

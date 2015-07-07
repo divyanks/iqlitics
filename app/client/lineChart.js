@@ -1,7 +1,11 @@
    angular.module('LineModule',[])
- 		.service("lineService", LineService);
+        .provider('lineProvider', function(){
+	        this.$get = function getLine(){
+			    return new CreateLine();
+			};   
+   }); 		
 
-function LineService(){
+function CreateLine(){
   this.lineChart = function()
   {
 		$("#fourthPanelText").empty();

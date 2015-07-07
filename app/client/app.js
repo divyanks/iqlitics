@@ -4,21 +4,18 @@ var app = angular.module('app', ['ui.router', 'ngSanitize', 'ngCookies', 'DonutM
 
 var apiFactory = require('./factories/api');
 
-
-
-
-app.controller('donutController', function($scope , serviceDonut){    
-	serviceDonut.createDonut();
+app.controller('donutController', function($scope , donutProvider){    
+	donutProvider.createDonut();
 });
 
-app.controller('barController', function($scope , barService){    
+app.controller('barController', function($scope , barProvider){    
 	var config = new Object();
 	var data = [ {x:'A', y:.08167}, {x:'B', y:	.01492}, {x:'C', y:	.02782}];
 
 	config.x = $(window).width()* 0.567 * 0.5 ;
 	config.y = $(window).height() * 0.35 ;
 
-	barService.createBarChart('thirdPanelText', data, config);
+	barProvider.createBarChart('thirdPanelText', data, config);
 	
 		var config = new Object();
 		var data = [ {x:'A', y:.08167}, {x:'B', y:	.01492}, {x:'C', y:	.02782}];
@@ -26,13 +23,13 @@ app.controller('barController', function($scope , barService){
 		config.x = $(window).width()* 0.567 * 0.5 ;
 		config.y = $(window).height() * 0.35 ;
 	
-	barService.createBarChart('secondPanelText', data, config);
+	barProvider.createBarChart('secondPanelText', data, config);
 	
 });
 
 
-app.controller('lineController', function($scope , lineService){    
-	lineService.lineChart();
+app.controller('lineController', function($scope , lineProvider){    
+	lineProvider.lineChart();
 });
 app.factory('apiFactory', apiFactory);
 
