@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <h3 class="modal-title">Setting Main page!!!</h3>
+</div>
+<div class="modal-body">
+    <div class="row"  >
+        <span ng-include="'/assets/views/partials/configMenu.hbs'"></span>
+        <span ng-include="'/assets/views/partials/previewPane.hbs'"></span>
+             
+        
+    </div>
+    <div class="row" ng-include="'/assets/views/partials/colHeaders.hbs'">
+        
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>

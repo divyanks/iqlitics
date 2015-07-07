@@ -36,8 +36,16 @@
 					<li>
 						<a href="#"><i class="glyphicon glyphicon-record fa-1x"></i> Channel Traffic</a>
 					</li>
-					<li>
-						<a href="#"><i class="glyphicon glyphicon-cog fa-1x"></i> Options </a>
+					<li>                          
+                        
+                        <a href="#" ng-click="open('lg')" ng-controller="modalSettingsCtrl"> 
+                            <i class="glyphicon glyphicon-cog fa-1x" ></i> 
+                            Settings
+                        </a>
+                            
+                            
+                        <div ng-show="selected">{{ selected }}</div>
+                        
 					</li>
 				</ul>
 
