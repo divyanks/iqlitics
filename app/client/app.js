@@ -8,9 +8,8 @@ app.controller('donutController', function($scope , donutProvider){
 	donutProvider.createDonut();
 });
 
-app.controller('modalSettingsCtrl', function ($scope, $modal, $log) {
+/*app.controller('modalSettingsCtrl', function ($scope, $modal, $log) {
 
-  $scope.items = ['item1', 'item2', 'item3'];
 
   $scope.animationsEnabled = true;
 
@@ -18,7 +17,7 @@ app.controller('modalSettingsCtrl', function ($scope, $modal, $log) {
 
     var modalInstance = $modal.open({
       animation: $scope.animationsEnabled,
-        transclude: true,
+        transclude: false,
         restrict: 'E',
       templateUrl: '/assets/views/partials/configForm.hbs',
       controller: 'ModalInstanceCtrl',
@@ -42,7 +41,7 @@ app.controller('modalSettingsCtrl', function ($scope, $modal, $log) {
     $scope.animationsEnabled = !$scope.animationsEnabled;
   };
 
-});
+});*/
 
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.

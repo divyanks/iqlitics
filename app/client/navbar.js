@@ -43,6 +43,7 @@
     };
 		$(document).ready(function () {
 		$('#main-menu').metisMenu();
+		$('#config-main-menu').metisMenu();
 
 			$(window).bind("load resize", function () {
 				if ($(this).width() < 768) {
@@ -78,6 +79,7 @@
             METIS MENU 
             ======================================*/
             $('#main-menu').metisMenu();
+            $('#config-main-menu').metisMenu();
 
             /*====================================
               LOAD APPROPRIATE MENU BAR
@@ -104,5 +106,8 @@
     $(document).ready(function () {
         mainApp.main_fun();
     });
+	
+	
+
 
 }(jQuery));
