@@ -50,7 +50,8 @@
 					'<%= project.assets %>/js/lineChart.min.js': '<%= project.client %>/lineChart.js',
 					'<%= project.assets %>/js/barChart.min.js': '<%= project.client %>/barChart.js',
 					'<%= project.assets %>/js/provider.min.js': '<%= project.client %>/provider.js',
-					'<%= project.assets %>/js/dataService.min.js': '<%= project.client %>/dataService.js'
+					'<%= project.assets %>/js/dataService.min.js': '<%= project.client %>/dataService.js',
+					'<%= project.assets %>/js/configFormController.min.js': '<%= project.client %>/configFormControllers.js'
 				}
 			}
 		},
@@ -64,7 +65,8 @@
 					'<%= project.assets %>/js/lineChart.min.js': '<%= project.client %>/lineChart.js',
 					'<%= project.assets %>/js/barChart.min.js': '<%= project.client %>/barChart.js',					
 					'<%= project.assets %>/js/provider.min.js': '<%= project.client %>/provider.js',					
-					'<%= project.assets %>/js/dataService.min.js': '<%= project.client %>/dataService.js'					
+					'<%= project.assets %>/js/dataService.min.js': '<%= project.client %>/dataService.js',					
+					'<%= project.assets %>/js/configFormController.min.js': '<%= project.client %>/configFormControllers.js',					
 				}
 			},
 			dist: {
@@ -76,7 +78,8 @@
 					'<%= project.assets %>/js/lineChart.min.js': '<%= project.client %>/lineChart.js',
 					'<%= project.assets %>/js/barChart.min.js': '<%= project.client %>/barChart.js',					
 					'<%= project.assets %>/js/provider.min.js': '<%= project.client %>/provider.js',					
-					'<%= project.assets %>/js/dataService.min.js': '<%= project.client %>/dataService.js'					
+					'<%= project.assets %>/js/dataService.min.js': '<%= project.client %>/dataService.js',					
+					'<%= project.assets %>/js/configFormController.min.js': '<%= project.client %>/configFormControllers.js',					
 				}
 			}
 		},

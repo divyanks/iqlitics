@@ -8,9 +8,9 @@
 				<a data-toggle="collapse" data-parent="#accordion" href="#secondPanelText"><i class="glyphicon glyphicon-minus" style="padding-right:1em"></i></a>
 				<a href="#" onclick="removeText('secondPanelText')"><i class="glyphicon glyphicon-remove" style="padding-right:1em"></i></a>
 			</div>
-			<div ng-controller="barController as bar2" id="secondPanelText" class="panel-collapse collapse in">
-				<p>This is Second Panel of Compared With</p>
-			</div>
+				<div  class="panel-collapse collapse in">
+					<div ng-view></div>
+				</div>
 		</div>
 	</div>
 </div>
